@@ -1,0 +1,337 @@
+body{
+        background-color:rgb(29, 29, 35);
+        margin: 0px;
+        padding: 0px;
+        box-sizing: 0px;
+}
+
+.container{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-flow: column wrap;
+}
+
+a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+      
+    }
+
+    .image{
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -o-border-radius: 100%;
+}
+
+.btn{
+        width: 200px;
+        border: solid 1px rgb(72, 100, 72);
+        border-radius: 3px;
+        height: 50px;
+        position: relative;
+        top: 250px;
+        color:wheat;
+        background-color: rgb(72, 100, 72);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
+
+.btn:hover{
+        background-color: teal;
+        border: teal;
+}
+
+.btn:active{
+        background-color:rgb(139, 174, 139);
+}
+.ph{
+    display: none;
+}
+
+.d1{
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-flow: column wrap;
+    position: relative;
+    top: 100px;
+    right: 100px;
+
+}
+.en_tete{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+header{
+        font-size: 40px;
+        color: gray;
+        position: relative;
+        top: 50px;
+        right: 150px;
+        display: flex;
+        flex-flow: row nowrap;
+}
+
+.text{
+        font-size: 30px;
+        display: flex;
+        flex-flow: row nowrap;
+        max-lines: 2;
+        width:1000px;
+        font-weight: bold;
+        font-family: monospace;
+        text-align: center;
+        position: relative;
+        top: 200px;
+        color: gray;
+}
+
+
+.photo{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    position: absolute;
+    right: 50px;
+    top: 100px   ;
+}
+
+
+.img{
+        width: 20px;
+        height: 50px;
+        border: solid 5px black;
+        border-top-right-radius: 25%;
+        border-top-left-radius: 25%;
+        border-bottom-left-radius: 25%;
+        border-bottom-right-radius: 25%;
+}
+
+
+
+
+@media (min-width:830px) and (max-width:1170px){
+
+.container{
+    overflow: hidden;
+}
+
+.photo{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0px;
+    
+}
+
+
+
+.en_tete{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    height: max-content;
+    position: relative;
+    width: 100%;
+    height: 500px;
+   
+    
+}
+header{
+        position: absolute;
+        top: 30px;
+        left: 100px;
+}
+    .photo{
+        position: relative;
+        left: 200px;
+    }
+ 
+    .d1{
+        /* border: solid 1px white; */
+        width: 700px;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-flow: column wrap;
+        position: absolute;
+        top: 250px;
+        left: 70px;
+    }
+    .text{
+        font-size: 30px;
+        display: flex;
+        flex-flow: row nowrap;
+        max-lines: 2;
+        width:700px;
+        font-weight: bold;
+        font-family: monospace;
+        text-align: center;
+        position: relative;
+        top: 200px;
+        color: gray;
+}
+
+}
+
+
+@media (min-width:500px) and (max-width:830px){
+
+    .container{
+        overflow: hidden;
+        height:1000px;
+        width: 720px;
+    }
+    
+    .photo{
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        position: relative;
+        top: 0px;
+        left: 500px;
+        
+    }
+    
+    
+    
+    .en_tete{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-flow: row nowrap;
+        height: max-content;
+        position: relative;
+        width: 100%;
+        height: 500px;
+       
+        
+    }
+    header{
+            position: absolute;
+            top: 30px;
+            left: 100px;
+    }
+        .photo{
+            position: relative;
+            left: 200px;
+        }
+     
+        .d1{
+            /* border: solid 1px white; */
+            width: 700px;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            flex-flow: column wrap;
+            position: absolute;
+            top: 250px;
+            right: 20px;
+        }
+        .text{
+            font-size: 30px;
+            display: flex;
+            flex-flow: row nowrap;
+            max-lines: 2;
+            width:500px;
+            font-weight: bold;
+            font-family: monospace;
+            text-align: center;
+            position: relative;
+            top: 200px;
+            color: gray;
+    }
+    
+    }
+    
+    
+
+@media (min-width:250px) and (max-width:300px){
+
+    .container{
+        overflow: hidden;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .image{
+        width: 200px;
+        height: 200px;
+    }
+    .photo{
+       display: none;  
+    }
+    .ph{
+        display: block;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+    }
+    
+    
+    .en_tete{
+            /* overflow: hidden; */
+            width: 100vw;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            padding-right: 50px;
+            height: 500px;
+       
+        
+    }
+    header{
+            position: absolute;
+            top: 30px;
+            left: 65px;
+            font-size: 30px;
+    }
+        .photo{
+            position: relative;
+            left: 200px;
+        }
+
+       
+        .d1{
+            /* border: solid 1px white; */
+            width: 240px;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            flex-flow: column wrap;
+            position: absolute;
+            top: 230px;
+            left: 25px;
+        }
+        .text{
+            font-size: 25px;
+            display: flex;
+            flex-flow: row nowrap;
+            max-lines: 2;
+            width:200px;
+            font-weight: bold;
+            font-family: monospace;
+            text-align: center;
+            position: relative;
+            top: 200px;
+            color: gray;
+    }
+
+    
+    }
